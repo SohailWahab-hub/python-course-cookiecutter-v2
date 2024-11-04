@@ -20,11 +20,11 @@ generate-proj:
 test:
 	pytest -v tests/
 
-# lint:
-# 	bash run.sh lint
+lint:
+	bash run.sh lint
 
-# lint-ci:
-# 	bash run.sh lint:ci
+lint-ci:
+	bash run.sh lint:ci
 
 # publish-prod:
 # 	bash run.sh publish:prod

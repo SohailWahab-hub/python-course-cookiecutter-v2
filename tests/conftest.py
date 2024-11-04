@@ -11,6 +11,4 @@ insert this dir (tests) one directory up (pythonb course dir) at the zero elemen
 sys.path.insert(0, str(TEST_DIR_PARENT))
 
 # set up paths to our files and imports them
-pytest_plugins = [
-    "tests.fixtures.projects_dir"
-]
+pytest_plugins = ["tests.fixtures.projects_dir"]

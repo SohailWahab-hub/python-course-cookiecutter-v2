@@ -1,7 +1,7 @@
-import pytest
 import subprocess
-
 from pathlib import Path
+
+import pytest
 
 """
 set up:
@@ -25,6 +25,7 @@ test that the linting passes, passing in the project fixture function
 def test_linting_passes(project_dir: Path):
     cmd = ["make", "lint-ci"]
     subprocess.run(cmd, cwd=project_dir, check=True)
+
 
 @pytest.skip("skipping test_tests_passes", allow_module_level=True)
 def test_tests_passes(project_dir):
