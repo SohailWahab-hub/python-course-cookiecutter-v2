@@ -35,6 +35,7 @@ repos:
           (?x)(
               ^example/large/file.csv|
               ^example/large/sklearn-model.pkl
+              ^{{ cookiecutter.repo_name }}/
           )
       # Sort requirements in requirements.txt files.
       - id: requirements-txt-fixer
